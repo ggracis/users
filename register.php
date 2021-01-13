@@ -1,7 +1,7 @@
 <?php include('process.php'); ?>
 <html>
 <head>
-  <title>Verficar descuentos</title>
+  <title>Verficar descuentos - HOLA</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
