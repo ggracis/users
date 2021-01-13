@@ -1,8 +1,8 @@
 <?php 
-  $db = mysqli_connect('localhost', 'root', '', 'test');
+  $db = mysqli_connect('localhost', 'root', '', 'came_educativa');
   if (isset($_POST['dni_check'])) {
   	$dni = $_POST['dni'];
-  	$sql = "SELECT * FROM usuarios WHERE dni='$dni'";
+  	$sql = "SELECT * FROM alumnos WHERE dni='$dni'";
   	$results = mysqli_query($db, $sql);
   	if (mysqli_num_rows($results) > 0) {
         // URL por defecto
@@ -37,7 +37,7 @@
           // Si no lo encuentra devuelve el array con descuento 0
         $arrRespuesta = array(
             "URLdescuento" => "http://www.descuentoNADA.com",
-            "saludo" => "Hola vos tenes un carajo de descuento"
+            "saludo" => "Continuar con el proceso de compra"
         );
         echo json_encode($arrRespuesta);  
   	}

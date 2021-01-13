@@ -1,6 +1,6 @@
 body {
-  background: #a9d9c3;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #ffffff;
+  font-family: 'Roboto', sans-serif;
 }
 
 #register_form {
@@ -30,14 +30,14 @@ body {
   width: 80%;
   margin: 5px 10%;
   color: white;
-  background: #3b5998;
+  background: #0098cb;
   border: none;
   border-radius: 5px;
 }
 
 #boton a:link,
 a:visited {
-  background-color: #3b5998;
+  background-color: #0098cb;
   color: white;
   padding: 1em;
   text-align: center;
@@ -50,5 +50,15 @@ a:visited {
 
 #boton a:hover,
 a:active {
-  background-color: #3b5998;
+  background-color: #00b8eb;
+}
+
+input[type=text] {
+  outline: none;
+  padding: 20px;
+  display: block;
+  width: 300px;
+  border-radius: 3px;
+  border: 1px solid rgb(168, 167, 167);
+  margin: 20px auto;
 }
