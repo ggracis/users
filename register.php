@@ -11,7 +11,7 @@
 	  <div>
 	 	<input type="text" name="dni" placeholder="DNI" id="dni" >
 	    <div id="boton"><a href="#" target="_blank" style="background-color: #ccc; pointer-events: none;
-cursor: default;">DEBE INGRESAR DNI PUTO</a></div>
+cursor: default;">DEBE INGRESAR DNI POR FAVOR</a></div>
 	  </div>
 	</form>
 </body>

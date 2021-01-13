@@ -37,7 +37,7 @@
           // Si no lo encuentra devuelve el array con descuento 0
         $arrRespuesta = array(
             "URLdescuento" => "http://www.descuentoNADA.com",
-            "saludo" => "Hola vos tenes un carajo de descuento"
+            "saludo" => "Hola vos no tenes descuento"
         );
         echo json_encode($arrRespuesta);  
   	}
