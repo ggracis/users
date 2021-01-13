@@ -1,0 +1,54 @@
+body {
+  background: #a9d9c3;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#register_form {
+  width: 37%;
+  margin: 100px auto;
+  padding-bottom: 30px;
+  border: 1px solid #918274;
+  border-radius: 5px;
+  background: white;
+}
+#register_form h1 {
+  text-align: center;
+}
+#register_form input {
+  width: 80%;
+  height: 35px;
+  margin: 5px 10%;
+  font-size: 1.1em;
+  padding: 4px;
+  font-size: 0.9em;
+}
+#register_form p {
+  text-align: center;
+}
+#reg_btn {
+  height: 35px;
+  width: 80%;
+  margin: 5px 10%;
+  color: white;
+  background: #3b5998;
+  border: none;
+  border-radius: 5px;
+}
+
+#boton a:link,
+a:visited {
+  background-color: #3b5998;
+  color: white;
+  padding: 1em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 76%;
+  margin: 5px 10%;
+  font-size: 0.9em;
+}
+
+#boton a:hover,
+a:active {
+  background-color: #3b5998;
+}
