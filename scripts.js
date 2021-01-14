@@ -22,7 +22,7 @@ $("document").ready(function () {
     });
   };
 
-  $("#dni").on("blur", function () {
+  $("#dni").on("click", function () {
     chequearUsuario();
   });
   

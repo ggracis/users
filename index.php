@@ -8,17 +8,14 @@
 		<title>Verficar descuentos</title>
 	</head>
 <body>
- <form id="register_form">
+	<form id="register_form">
 	  <h1>Verficar descuentos</h1>
 	  <p>Escriba su DNI para verificar descuentos</p>
 	  <div>
-	 	<input type="text" name="dni" placeholder="DNI" id="dni" >
+		 <input type="text" name="dni" placeholder="DNI" id="dni" >
+		 
 	    <div id="boton"><a href="#" target="_blank" style="background-color: #ccc; pointer-events: none;
-<<<<<<< HEAD:index.php
-cursor: default;">DEBE INGRESAR</a></div>
-=======
-cursor: default;">DEBE INGRESAR DNI POR FAVOR</a></div>
->>>>>>> e751760324d7ce374edf12a960113413d5bab8a9:register.php
+		cursor: default;">DEBE INGRESAR DNI</a></div>
 	  </div>
 	</form>
 </body>
