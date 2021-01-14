@@ -28,7 +28,7 @@
         $arrRespuesta = array(
             "URLdescuento" => $URLdescuento,
             "descuento" => $descuento,
-            "saludo" => "Hola ".$nombre." (".$dni.") vos tenes un ".$descuento."% de descuento"
+            "saludo" => "Hola ".$nombre." "DNI"(".$dni.") vos tenes un ".$descuento."% de descuento"
         );         
         // Devuelvo el array
         echo json_encode($arrRespuesta);   
