@@ -25,5 +25,4 @@ $("document").ready(function () {
   $("#dni").on("blur", function () {
     chequearUsuario();
   });
-  
 });

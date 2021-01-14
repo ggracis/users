@@ -13,12 +13,7 @@
 	  <p>Escriba su DNI para verificar descuentos</p>
 	  <div>
 	 	<input type="text" name="dni" placeholder="DNI" id="dni" >
-	    <div id="boton"><a href="#" target="_blank" style="background-color: #ccc; pointer-events: none;
-<<<<<<< HEAD:index.php
-cursor: default;">DEBE INGRESAR</a></div>
-=======
-cursor: default;">DEBE INGRESAR DNI POR FAVOR</a></div>
->>>>>>> e751760324d7ce374edf12a960113413d5bab8a9:register.php
+	    <div id="boton"><a href="#" target="_blank" style="background-color: #ccc; pointer-events: none; cursor: default;">DEBE INGRESAR</a></div>
 	  </div>
 	</form>
 </body>

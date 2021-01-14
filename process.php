@@ -1,7 +1,9 @@
 <?php 
+ // $db = mysqli_connect('localhost', 'root', '', 'test');
   $db = mysqli_connect('localhost', 'root', '', 'came_educativa');
   if (isset($_POST['dni_check'])) {
-  	$dni = $_POST['dni'];
+      $dni = $_POST['dni'];
+    //$sql = "SELECT * FROM usuarios WHERE dni='$dni'";
   	$sql = "SELECT * FROM alumnos WHERE dni='$dni'";
   	$results = mysqli_query($db, $sql);
   	if (mysqli_num_rows($results) > 0) {
@@ -28,7 +30,7 @@
         $arrRespuesta = array(
             "URLdescuento" => $URLdescuento,
             "descuento" => $descuento,
-            "saludo" => "Hola ".$nombre." "DNI"(".$dni.") vos tenes un ".$descuento."% de descuento"
+            "saludo" => "Hola ".$nombre." DNI: (".$dni.") vos tenes un ".$descuento."% de descuento"
         );         
         // Devuelvo el array
         echo json_encode($arrRespuesta);   
