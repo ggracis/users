@@ -1,6 +1,5 @@
 $("document").ready(function () {
   var dni_state = false;
-  var response = "";
 
   chequearUsuario = () => {
     var dniUsuario = $("#dni").val();
