@@ -1,11 +1,14 @@
 $("document").ready(function () {
   var dni_state = false;
+  var response = "";
 
   chequearUsuario = () => {
     var dniUsuario = $("#dni").val();
+
     if (dniUsuario == "") {
       dni_state = false;
-      return;
+     
+      return false;
     }
     //se utiliza $.ajax(), a la cual se le pasa un objeto {}, con la información
     $.ajax({
@@ -22,8 +25,10 @@ $("document").ready(function () {
     });
   };
 
-  $("#dni").on("click", function () {
+  $("#dni").on("blur", function () {
     chequearUsuario();
   });
-  
+
+ 
 });
+

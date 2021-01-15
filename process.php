@@ -1,12 +1,15 @@
 <?php 
+ // $db = mysqli_connect('localhost', 'root', '', 'test');
   $db = mysqli_connect('localhost', 'root', '', 'came_educativa');
+
   if (isset($_POST['dni_check'])) {
-  	$dni = $_POST['dni'];
+      $dni = $_POST['dni'];
+    //$sql = "SELECT * FROM usuarios WHERE dni='$dni'";
   	$sql = "SELECT * FROM alumnos WHERE dni='$dni'";
   	$results = mysqli_query($db, $sql);
   	if (mysqli_num_rows($results) > 0) {
         // URL por defecto
-        $URLdescuento = "http://www.descuentoNADA.com";
+        $URLdescuento = "https://portalpagos.camepagos.com.ar/payment?code=$2y$13$52nOv2wXIj4anSbZNvHHE.vgOSB6f9jb6odwkDNxsu.vX6THXBnPm&continue=pp";
   
         // Si encuentra un resultado en la base de datos
         $fila = $results->fetch_assoc();
@@ -28,7 +31,7 @@
         $arrRespuesta = array(
             "URLdescuento" => $URLdescuento,
             "descuento" => $descuento,
-            "saludo" => "Hola ".$nombre." "DNI"(".$dni.") vos tenes un ".$descuento."% de descuento"
+            "saludo" => "Hola ".$nombre." DNI: (".$dni.") vos tenes un ".$descuento."% de descuento"
         );         
         // Devuelvo el array
         echo json_encode($arrRespuesta);   
@@ -40,7 +43,8 @@
             "saludo" => "Continuar con el proceso de compra"
         );
         echo json_encode($arrRespuesta);  
-  	}
+      }
+      //return;
   	exit();
   }
  // Joya
